@@ -15,7 +15,7 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow-sm sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">Sole Mates</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,12 +35,45 @@
   </nav>
 
 
-  <div class="bg-secondary text-light p-5 text-center">
+  <div class="bg-light text-dark p-5 text-center">
     <h1>Find Your Sole Mate</h1>
     <p class="lead">If you have two different sized feet, find your Sole Mate who can trade shoes with you.</p>
-    <a href="#" class="btn btn-primary mt-2">
-      Learn More
-    </a>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary mt-2 rounded-pill" data-bs-toggle="modal" data-bs-target="#learnMoreModal">
+      Login
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Welcome!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-start">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me?</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 
   <div class="container mt-5">
@@ -48,14 +81,26 @@
       <div class="col-md-4">
         <h3>Feature 1</h3>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p class="mt-3 text-center">
+          <a href="#" class="btn btn-info text-white">Learn More</a>
+        </p>
+
       </div>
       <div class="col-md-4">
         <h3>Feature 1</h3>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p class="mt-3 text-center">
+          <a href="#" class="btn btn-info text-white">Learn More</a>
+        </p>
+
       </div>
       <div class="col-md-4">
         <h3>Feature 1</h3>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p class="mt-3 text-center">
+          <a href="#" class="btn btn-info text-white">Learn More</a>
+        </p>
+
       </div>
     </div>
   </div>
@@ -144,7 +189,7 @@
   </div>
 
 
-  <footer class="p-5 bg-dark text-light mt-5">
+  <footer class="p-5 bg-dark text-light mt-5 border-top shadow-sm">
     Footer
   </footer>
 
