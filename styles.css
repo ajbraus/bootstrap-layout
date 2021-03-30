@@ -15,3 +15,16 @@ hr {
 .bg-graphic {
   background-image: url("graphic.jpg");
 }
+
+.btn-info {
+  background-color: #521ec3;
+  border-color: #6631d8;
+}
+
+.btn-info:hover {
+  color: #fff;
+  background-color: #815bd2;
+  border-color: #6b43c2;
+}
+
+/* psuedo-selector */
